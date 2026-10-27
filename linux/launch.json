@@ -1,0 +1,13 @@
+{
+  "container": "heartbeat1340-llm-sdk-linux-last",
+  "image": "node:24.22.1-bookworm",
+  "inputTarSha256": "081a0ca50ff903d9d04448ad046d581cc707172d3b8d35e5d4186d37f5c7842d",
+  "sourceIndexTree": "f5e7f5ec4286a58f9e1a444181aaeee2574a5f2c",
+  "environmentRecovery": {
+    "fetch_timeout": 60000,
+    "fetch_retries": 1,
+    "maxsockets": 3
+  },
+  "auditDisabled": false,
+  "fullCIArgv": true
+}

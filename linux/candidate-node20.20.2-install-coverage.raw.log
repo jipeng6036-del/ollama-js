@@ -1,0 +1,330 @@
+npm verbose cli /home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node /home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@10.8.2
+npm info using node@v20.20.2
+npm verbose title npm i @vitest/coverage-v8@^2.1.6
+npm verbose argv "i" "--save-dev" "@vitest/coverage-v8@^2.1.6"
+npm verbose logfile logs-max:10 dir:/home/node/validation/npm-cache/_logs/2026-10-27T15_00_20_102Z-
+npm verbose logfile /home/node/validation/npm-cache/_logs/2026-10-27T15_00_20_102Z-debug-0.log
+npm verbose shrinkwrap failed to load node_modules/.package-lock.json missing from lockfile: node_modules/@swc/wasm
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fcoverage-v8 1061ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fbrowser 238ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/playwright 236ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/vitest 202ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@edge-runtime%2fvm 224ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2fnode 223ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fui 231ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/happy-dom 205ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/jsdom 204ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/canvas 209ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/webdriverio 210ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/puppeteer-core 212ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/test-exclude 211ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@bcoe%2fv8-coverage 422ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/istanbul-reports 626ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@ampproject%2fremapping 851ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/istanbul-lib-report 929ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/magicast 986ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fspy 1072ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2futils 1151ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fexpect 1197ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/istanbul-lib-source-maps 1273ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fmocker 1361ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2frunner 1420ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/vite-node 1617ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/istanbul-lib-coverage 1673ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/chai 1826ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fsnapshot 1831ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/vite 1933ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fpretty-format 2075ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/make-dir 198ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fgen-mapping 229ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@jridgewell%2ftrace-mapping 252ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/html-escaper 397ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/glob 436ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2ftypes 480ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/minimatch 590ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@istanbuljs%2fschema 654ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fparser 699ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@jridgewell%2ftrace-mapping 800ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-string-parser 214ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-validator-identifier 259ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/jackspeak 208ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/foreground-child 214ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/brace-expansion 216ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/path-scurry 411ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/package-json-from-dist 412ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/minipass 416ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/less 207ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/lightningcss 212ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/sass 204ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/sass-embedded 216ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/stylus 203ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/sugarss 205ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss 218ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/terser 204ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/msw 206ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/typescript 231ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/estree-walker 211ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/loupe 214ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/loupe 225ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/pathval 405ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/check-error 420ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/deep-eql 437ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/assertion-error 602ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/rollup 631ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/tinyspy 665ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/es-module-lexer 812ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/cac 820ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/esbuild 860ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fsunos-x64 230ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2faix-ppc64 248ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-x64 252ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-x64 452ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ia32 466ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-x64 487ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-x64 670ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-ia32 701ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-x64 718ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-arm64 890ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm 923ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-s390x 928ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-x64 1110ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ppc64 1171ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm64 1351ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm64 1386ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-loong64 1538ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm 1577ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-riscv64 1610ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-x64 1780ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 1785ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-mips64el 1826ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@types%2festree 1769ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-arm64 2008ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-darwin-x64 1810ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-freebsd-x64 1959ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-openbsd-x64 1777ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@napi-rs%2flzma-linux-x64-gnu 1810ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-darwin-arm64 1935ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-android-arm64 1769ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-freebsd-arm64 1812ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-x64-gnu 1925ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-x64-gnu 1770ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-x64-musl 1811ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-x64-msvc 1942ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm64-gnu 1773ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-ppc64-gnu 1787ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-ia32-msvc 1719ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-s390x-gnu 1774ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-android-arm-eabi 1634ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm64-musl 1741ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-ppc64-musl 1724ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-arm64-msvc 1615ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-loong64-gnu 1752ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-riscv64-gnu 1724ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-openharmony-arm64 1603ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-loong64-musl 1740ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-riscv64-musl 1704ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm-gnueabihf 1613ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm-musleabihf 1733ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/cross-spawn 197ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/signal-exit 207ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/lru-cache 229ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@isaacs%2fcliui 418ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@pkgjs%2fparseargs 434ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/wrap-ansi 211ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/wrap-ansi 212ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi 213ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/string-width 406ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/string-width 415ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/strip-ansi 419ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/emoji-regex 207ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/emoji-regex 208ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/eastasianwidth 215ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-regex 407ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 409ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles 425ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/ansi-styles 606ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/balanced-match 219ms (cache revalidated)
+Debugger listening on ws://127.0.0.1:9229/a06d5547-babc-4cb1-88ab-71cd29a787e6
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/a06d5547-babc-4cb1-88ab-71cd29a787e6
+For help, see: https://nodejs.org/en/docs/inspector
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-win32-x64-msvc
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-win32-x64-gnu
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-win32-ia32-msvc
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-win32-arm64-msvc
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-openharmony-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-openbsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-s390x-gnu
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-riscv64-musl
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-riscv64-gnu
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-ppc64-musl
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-ppc64-gnu
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-loong64-musl
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-loong64-gnu
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-arm64-musl
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-arm64-gnu
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-arm-musleabihf
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-arm-gnueabihf
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-freebsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-freebsd-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-darwin-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-darwin-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-android-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-android-arm-eabi
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@napi-rs/lzma-linux-x64-gnu
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/fsevents
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@swc/core-darwin-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/win32-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/win32-ia32
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/win32-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/sunos-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/openbsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/netbsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-s390x
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-riscv64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-ppc64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-mips64el
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-loong64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-ia32
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/linux-arm
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/freebsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/freebsd-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/darwin-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/darwin-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/android-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/android-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/android-arm
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@esbuild/aix-ppc64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/@rollup/rollup-linux-x64-musl
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/win32-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/win32-ia32
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/win32-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/sunos-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/openbsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/netbsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-s390x
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-riscv64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-ppc64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-mips64el
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-loong64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-ia32
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/linux-arm
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/freebsd-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/freebsd-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/darwin-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/darwin-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/android-x64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/android-arm64
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/android-arm
+npm verbose reify failed optional dependency /home/node/validation/candidate-node20.20.2/node_modules/vite/node_modules/@esbuild/aix-ppc64
+npm http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 390796ms
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm http fetch GET 200 https://registry.npmjs.org/browserslist 275ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/braces 549ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/esbuild 765ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/ajv 975ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/js-yaml 1172ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/micromatch 1386ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/flatted 1588ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/colord 1796ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/nanoid 1999ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/brace-expansion 2247ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/rollup 2455ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/svgo 2682ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/source-map-js 2878ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/tinypool 3079ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/vitest 3287ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/minimatch 3510ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fmocker 3728ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/vite 3933ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss 4141ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-selector-parser 4340ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/picomatch 4543ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/defu 4750ms (cache revalidated)
+npm http fetch GET https://registry.npmjs.org/@babel%2fcore attempt 1 failed with ECONNRESET
+npm http fetch GET https://registry.npmjs.org/@babel%2fhelpers attempt 1 failed with ECONNRESET
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 30579ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelpers 31279ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/untyped 207ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-module-transforms 213ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/eslint 218ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@humanwhocodes%2fconfig-array 266ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/glob 467ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@eslint%2feslintrc 1027ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-unicode 218ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-compilation-targets 228ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/stylehacks 228ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/autoprefixer 422ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-minify-params 422ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-colormin 443ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-merge-rules 615ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-convert-values 621ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/caniuse-api 678ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/update-browserslist-db 802ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-reduce-initial 828ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-minify-gradients 219ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/unbuild 211ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/mkdist 278ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/flat-cache 221ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/fast-glob 204ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2fpluginutils 256ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/cssnano-preset-default 251ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/css-declaration-sorter 253ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-calc 267ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-discard-overridden 457ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-minify-font-values 460ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/cssnano 467ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-discard-duplicates 657ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-discard-comments 659ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/cssnano-utils 670ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-merge-longhand 855ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-charset 858ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-minify-selectors 862ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-positions 1047ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-string 1061ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-display-values 1063ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-url 1246ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-timing-functions 1267ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-reduce-transforms 1269ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-nested 1441ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-unique-selectors 1467ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-svgo 1468ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-repeat-style 1640ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-ordered-values 1673ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-normalize-whitespace 1676ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/postcss-discard-empty 1932ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2fplugin-alias 230ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2fplugin-commonjs 231ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2fplugin-node-resolve 239ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2fplugin-json 446ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/rollup-plugin-dts 445ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@rollup%2fplugin-replace 485ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/css-tree 209ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/magicast 213ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/@vitest%2fcoverage-v8 233ms (cache revalidated)
+npm http fetch GET 200 https://registry.npmjs.org/vite-node 209ms (cache revalidated)
+
+added 46 packages, removed 5 packages, changed 27 packages, and audited 405 packages in 7m
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+28 vulnerabilities (1 low, 10 moderate, 14 high, 3 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm verbose cwd /home/node/validation/candidate-node20.20.2
+npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+npm verbose node v20.20.2
+npm verbose npm  v10.8.2
+npm verbose exit 0
+npm info ok

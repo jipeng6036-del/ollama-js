@@ -1,0 +1,91 @@
+npm verbose cli /home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node /home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@10.8.2
+npm info using node@v20.20.2
+npm verbose title npm test --coverage
+npm verbose argv "test" "--" "--coverage"
+npm verbose logfile logs-max:10 dir:/home/node/validation/npm-cache/_logs/2026-10-27T15_07_46_126Z-
+npm verbose logfile /home/node/validation/npm-cache/_logs/2026-10-27T15_07_46_126Z-debug-0.log
+
+> ollama@0.0.0 test
+> vitest --run --coverage
+
+
+ RUN  v2.1.9 /home/node/validation/candidate-node20.20.2
+      Coverage enabled with v8
+
+ ✓ test/index.test.ts (22 tests) 5ms
+ ✓ test/browser.test.ts (6 tests) 7ms
+ ✓ test/utils.test.ts (6 tests) 12ms
+stderr | test/systemone.test.ts > supports the browser proxy and omits optional request fields
+error parsing url TypeError: Invalid URL
+    at new URL (node:internal/url:806:29)
+    at fetchWithHeaders (/home/node/validation/candidate-node20.20.2/src/utils.ts:186:20)
+    at Module.post (/home/node/validation/candidate-node20.20.2/src/utils.ts:276:26)
+    at Ollama.systemone (/home/node/validation/candidate-node20.20.2/src/browser.ts:316:34)
+    at /home/node/validation/candidate-node20.20.2/test/systemone.test.ts:65:16
+    at file:///home/node/validation/candidate-node20.20.2/node_modules/@vitest/runner/dist/index.js:146:14
+    at file:///home/node/validation/candidate-node20.20.2/node_modules/@vitest/runner/dist/index.js:533:11
+    at runWithTimeout (file:///home/node/validation/candidate-node20.20.2/node_modules/@vitest/runner/dist/index.js:39:7)
+    at runTest (file:///home/node/validation/candidate-node20.20.2/node_modules/@vitest/runner/dist/index.js:1056:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_INVALID_URL',
+  input: '/v1/systemone'
+}
+
+ ✓ test/headers.test.ts (16 tests) 183ms
+ ✓ test/systemone.test.ts (13 tests) 195ms
+
+ Test Files  5 passed (5)
+      Tests  63 passed (63)
+   Start at  15:07:46
+   Duration  2.70s (transform 734ms, setup 0ms, collect 1.32s, tests 402ms, environment 2ms, prepare 4.34s)
+
+ % Coverage report from v8
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   14.67 |    68.14 |   33.33 |   14.67 |                   
+ examples          |       0 |        0 |       0 |       0 |                   
+  systemone.mjs    |       0 |        0 |       0 |       0 | 1-36              
+ examples/abort    |       0 |        0 |       0 |       0 |                   
+  ...l-requests.ts |       0 |        0 |       0 |       0 | 1-55              
+  ...le-request.ts |       0 |        0 |       0 |       0 | 1-48              
+ ...fill-in-middle |       0 |        0 |       0 |       0 |                   
+  fill.ts          |       0 |        0 |       0 |       0 | 1-12              
+ ...age-generation |       0 |        0 |       0 |       0 |                   
+  ...generation.ts |       0 |        0 |       0 |       0 | 1-29              
+ examples/logprobs |       0 |        0 |       0 |       0 |                   
+  logprobs-chat.ts |       0 |        0 |       0 |       0 | 1-30              
+ ...les/multimodal |       0 |        0 |       0 |       0 |                   
+  multimodal.ts    |       0 |        0 |       0 |       0 | 1-16              
+ .../pull-progress |       0 |        0 |       0 |       0 |                   
+  pull.ts          |       0 |        0 |       0 |       0 | 1-29              
+ ...ctured_outputs |       0 |        0 |       0 |       0 |                   
+  ...puts-image.ts |       0 |        0 |       0 |       0 | 1-83              
+  ...ed-outputs.ts |       0 |        0 |       0 |       0 | 1-71              
+ examples/thinking |       0 |        0 |       0 |       0 |                   
+  ...ng-enabled.ts |       0 |        0 |       0 |       0 | 1-20              
+  ...ing-levels.ts |       0 |        0 |       0 |       0 | 1-36              
+  ...-streaming.ts |       0 |        0 |       0 |       0 | 1-36              
+ examples/tools    |       0 |        0 |       0 |       0 |                   
+  calculator.ts    |       0 |        0 |       0 |       0 | 1-95              
+  ...ht-tracker.ts |       0 |        0 |       0 |       0 | 1-90              
+  multi-tool.ts    |       0 |        0 |       0 |       0 | 1-142             
+ ...ples/websearch |       0 |    33.33 |   33.33 |       0 |                   
+  ...ls-helpers.ts |       0 |      100 |     100 |       0 | 28-771            
+  ...wser-tools.ts |       0 |        0 |       0 |       0 | 1-172             
+  ...arch-tools.ts |       0 |        0 |       0 |       0 | 1-135             
+ src               |   56.44 |    80.85 |   47.36 |   56.44 |                   
+  browser.ts       |   37.68 |    90.47 |      30 |   37.68 | ...69-376,385-390 
+  constant.ts      |     100 |      100 |     100 |     100 |                   
+  index.ts         |   40.54 |       60 |   33.33 |   40.54 | ...23,35-41,49-62 
+  interfaces.ts    |       0 |        0 |       0 |       0 |                   
+  utils.ts         |   71.79 |    79.41 |   73.33 |   71.79 | ...40-342,347-356 
+  version.ts       |     100 |      100 |     100 |     100 |                   
+-------------------|---------|----------|---------|---------|-------------------
+npm verbose cwd /home/node/validation/candidate-node20.20.2
+npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+npm verbose node v20.20.2
+npm verbose npm  v10.8.2
+npm verbose exit 0
+npm info ok

@@ -1,0 +1,19 @@
+src/index.ts(3,30): error TS2307: Cannot find module 'node:fs' or its corresponding type declarations.
+src/index.ts(4,25): error TS2307: Cannot find module 'node:path' or its corresponding type declarations.
+src/index.ts(10,41): error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/index.ts(13,14): error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/index.ts(19,16): error TS2580: Cannot find name 'Buffer'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(17,15): error TS2339: Property 'captureStackTrace' does not exist on type 'ErrorConstructor'.
+src/utils.ts(18,13): error TS2339: Property 'captureStackTrace' does not exist on type 'ErrorConstructor'.
+src/utils.ts(109,21): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(110,15): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(110,31): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(110,59): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(136,19): error TS2550: Property 'fromEntries' does not exist on type 'ObjectConstructor'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2019' or later.
+src/utils.ts(173,16): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(174,9): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(175,16): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(176,9): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(177,24): error TS2580: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+src/utils.ts(189,32): error TS2550: Property 'fromEntries' does not exist on type 'ObjectConstructor'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2019' or later.
+src/utils.ts(190,12): error TS2550: Property 'entries' does not exist on type 'ObjectConstructor'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2017' or later.

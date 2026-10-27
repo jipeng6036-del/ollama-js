@@ -1,0 +1,12 @@
+{
+  "baseCommit": "c276d078eee37a0df003b9ee2120ec70327f32e9",
+  "sourceCommit": "1a01bafe326af583a6b410604fd198695c6ee4e7",
+  "tree": "f5e7f5ec4286a58f9e1a444181aaeee2574a5f2c",
+  "files": 44,
+  "changed": [
+    "src/utils.ts",
+    "test/headers.test.ts"
+  ],
+  "utilsCanonicalSha256": "b39d98ea534017f679d671bb261a18388d200347897369fef8f14e8ef4007b6e",
+  "sourceLink": "https://github.com/jipeng6036-del/ollama-js/commit/1a01bafe326af583a6b410604fd198695c6ee4e7"
+}

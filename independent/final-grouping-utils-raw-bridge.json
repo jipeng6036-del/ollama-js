@@ -1,0 +1,17 @@
+{
+  "FWorkingTreeRaw": {
+    "path": "F:\\Github-PR\\inspection\\heartbeat1340-llm-sdk-js\\src\\utils.ts",
+    "bytes": 12116,
+    "sha256": "277249045590a437db4002a7f85032ef4a2742982a9b12731a29dfef501f2224",
+    "CRLFCount": 408
+  },
+  "CStableStageRawAndGitIndexCanonical": {
+    "path": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-node18.20.8\\src\\utils.ts",
+    "bytes": 11708,
+    "sha256": "b39d98ea534017f679d671bb261a18388d200347897369fef8f14e8ef4007b6e",
+    "CRLFCount": 0
+  },
+  "GitIndexBlob": "3dc2fddacfa297ab05ae1e0d3dfd85a325f467f6",
+  "exactGitIndexEqualsCStage": true,
+  "FOnlyCRLFToLFEqualsCanonical": true
+}

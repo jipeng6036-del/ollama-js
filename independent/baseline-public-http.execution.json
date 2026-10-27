@@ -1,0 +1,18 @@
+{
+  "command": [
+    "E:/Nodejs/node.exe",
+    "F:\\Github-PR\\ci-evidence\\heartbeat1340-go-ai\\ollama-header-review\\public-http-probe.mjs",
+    "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8",
+    "F:\\Github-PR\\ci-evidence\\heartbeat1340-go-ai\\ollama-header-review",
+    "baseline-public-http"
+  ],
+  "cwd": "F:\\Github-PR\\ci-evidence\\heartbeat1340-go-ai\\ollama-header-review",
+  "startedAtUtc": "2026-10-27T14:07:59.613462+00:00",
+  "completedAtUtc": "2026-10-27T14:08:04.014129+00:00",
+  "exitCode": 0,
+  "probeSha256": "2ddd746b5734e4af8b4357aa0913528f2503795091834d6e6a4d0156d02edeb8",
+  "stdoutBytes": 11249,
+  "stdoutSha256": "66abc3670993a549388122d0c13f1b1064b54001238bb43abd55013993c3f42c",
+  "stderrBytes": 0,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

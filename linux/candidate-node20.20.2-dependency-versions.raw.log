@@ -1,0 +1,35 @@
+npm verbose cli /home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node /home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@10.8.2
+npm info using node@v20.20.2
+npm verbose title npm ls vitest @vitest/coverage-v8
+npm verbose argv "ls" "vitest" "@vitest/coverage-v8" "--json"
+npm verbose logfile logs-max:10 dir:/home/node/validation/npm-cache/_logs/2026-10-27T15_07_49_383Z-
+npm verbose logfile /home/node/validation/npm-cache/_logs/2026-10-27T15_07_49_383Z-debug-0.log
+npm verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+{
+  "version": "0.0.0",
+  "name": "ollama",
+  "dependencies": {
+    "@vitest/coverage-v8": {
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/@vitest/coverage-v8/-/coverage-v8-2.1.9.tgz",
+      "overridden": false,
+      "dependencies": {
+        "vitest": {
+          "version": "2.1.9"
+        }
+      }
+    },
+    "vitest": {
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/vitest/-/vitest-2.1.9.tgz",
+      "overridden": false
+    }
+  }
+}
+npm verbose cwd /home/node/validation/candidate-node20.20.2
+npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+npm verbose node v20.20.2
+npm verbose npm  v10.8.2
+npm verbose exit 0
+npm info ok

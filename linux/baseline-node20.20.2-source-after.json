@@ -1,0 +1,7 @@
+{
+  "changedFromCanonicalSource": [
+    "package.json",
+    "package-lock.json"
+  ],
+  "ciDependencyOverlayAllowed": true
+}

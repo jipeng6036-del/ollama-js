@@ -1,0 +1,15 @@
+{
+  "command": [
+    "E:/Nodejs/node.exe",
+    "F:\\Github-PR\\ci-evidence\\heartbeat1340-go-ai\\ollama-header-review\\final-grouping-auth-control.mjs"
+  ],
+  "cwd": "F:\\Github-PR\\ci-evidence\\heartbeat1340-go-ai\\ollama-header-review",
+  "startedAtUtc": "2026-10-27T14:45:15.483162+00:00",
+  "completedAtUtc": "2026-10-27T14:45:15.635999+00:00",
+  "exitCode": 0,
+  "scriptSha256": "6b420f78a34c3c59cc167bf0f1ae138dd4d2af1934738b4697c54fd493328486",
+  "stdoutSha256": "d70b22d5f27760ce95d6b06e1f652bfd8378894e52405af4b9b88f07083624b6",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdoutBytes": 45566,
+  "stderrBytes": 0
+}

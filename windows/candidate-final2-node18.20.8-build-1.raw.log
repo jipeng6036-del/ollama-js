@@ -1,0 +1,22 @@
+
+> ollama@0.0.0 build
+> unbuild
+
+i Automatically detected entries: src/index, src/browser [esm] [cjs] [dts]
+i Building ollama
+i Cleaning dist directory: ./dist
+Entry module "src/index.ts" is using named and default exports together. Consumers of your bundle will have to use `chunk.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
+Entry module "src/browser.ts" is using named and default exports together. Consumers of your bundle will have to use `chunk.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
+√ Build succeeded for ollama
+  dist/index.cjs (total size: 20 kB, chunk size: 1.52 kB, exports: Ollama, default)
+  └─ dist/browser.cjs (18.4 kB)
+
+  dist/browser.cjs (total size: 18.4 kB, chunk size: 18.4 kB, exports: Ollama, default)
+
+  dist/index.mjs (total size: 19.6 kB, chunk size: 1.23 kB, exports: Ollama, default)
+  └─ dist/browser.mjs (18.4 kB)
+
+  dist/browser.mjs (total size: 18.4 kB, chunk size: 18.4 kB, exports: Ollama, default)
+
+Σ Total dist size (byte size): 89 kB
+

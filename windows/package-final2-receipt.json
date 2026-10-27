@@ -1,0 +1,44 @@
+[
+  {
+    "kind": "candidate-final2",
+    "tag": "pack",
+    "command": [
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+      "pack",
+      "--json",
+      "--pack-destination",
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-package"
+    ],
+    "cwd": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-node18.20.8",
+    "exit": 0,
+    "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-pack.raw.log"
+  },
+  {
+    "kind": "candidate-final2",
+    "tag": "install",
+    "command": [
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+      "install",
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-package\\ollama-0.0.0.tgz",
+      "--no-audit",
+      "--no-fund"
+    ],
+    "cwd": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-consumer",
+    "exit": 0,
+    "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-install.raw.log"
+  },
+  {
+    "kind": "candidate-final2",
+    "tag": "installed-http",
+    "command": [
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+      "probe.mjs",
+      "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-installed-http.json"
+    ],
+    "cwd": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-consumer",
+    "exit": 0,
+    "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-installed-http.raw.log"
+  }
+]

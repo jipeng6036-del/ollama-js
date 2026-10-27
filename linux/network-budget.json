@@ -1,0 +1,15 @@
+{
+  "defaults": {
+    "fetch-timeout": "300000",
+    "fetch-retries": "2",
+    "maxsockets": "15",
+    "audit": "true"
+  },
+  "effective": {
+    "fetch-timeout": "60000",
+    "fetch-retries": "1",
+    "maxsockets": "3",
+    "audit": "true"
+  },
+  "reason": "Normal default retry budget exceeds the 600-second outer step cap; bounded recovery, root cause unconfirmed."
+}

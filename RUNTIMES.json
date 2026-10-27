@@ -1,0 +1,44 @@
+[
+  {
+    "version": "16.20.2",
+    "archive": "node-v16.20.2-win-x64.zip",
+    "source": "https://nodejs.org/dist/v16.20.2/node-v16.20.2-win-x64.zip",
+    "sha256": "f8bb35f6c08dc7bf14ac753509c06ed1a7ebf5b390cd3fbdc8f8c1aedd020ec3",
+    "officialShasumsMatch": true
+  },
+  {
+    "version": "16.20.2",
+    "archive": "node-v16.20.2-linux-x64.tar.xz",
+    "source": "https://nodejs.org/dist/v16.20.2/node-v16.20.2-linux-x64.tar.xz",
+    "sha256": "874463523f26ed528634580247f403d200ba17a31adf2de98a7b124c6eb33d87",
+    "officialShasumsMatch": true
+  },
+  {
+    "version": "18.20.8",
+    "archive": "node-v18.20.8-win-x64.zip",
+    "source": "https://nodejs.org/dist/v18.20.8/node-v18.20.8-win-x64.zip",
+    "sha256": "1a1e40260a6facba83636e4cd0ba01eb5bd1386896824b36645afba44857384a",
+    "officialShasumsMatch": true
+  },
+  {
+    "version": "18.20.8",
+    "archive": "node-v18.20.8-linux-x64.tar.xz",
+    "source": "https://nodejs.org/dist/v18.20.8/node-v18.20.8-linux-x64.tar.xz",
+    "sha256": "5467ee62d6af1411d46b6a10e3fb5cacc92734dbcef465fea14e7b90993001c9",
+    "officialShasumsMatch": true
+  },
+  {
+    "version": "20.20.2",
+    "archive": "node-v20.20.2-win-x64.zip",
+    "source": "https://nodejs.org/dist/v20.20.2/node-v20.20.2-win-x64.zip",
+    "sha256": "dc3700fdd57a63eedb8fd7e3c7baaa32e6a740a1b904167ff4204bc68ed8bf77",
+    "officialShasumsMatch": true
+  },
+  {
+    "version": "20.20.2",
+    "archive": "node-v20.20.2-linux-x64.tar.xz",
+    "source": "https://nodejs.org/dist/v20.20.2/node-v20.20.2-linux-x64.tar.xz",
+    "sha256": "df770b2a6f130ed8627c9782c988fda9669fa23898329a61a871e32f965e007d",
+    "officialShasumsMatch": true
+  }
+]

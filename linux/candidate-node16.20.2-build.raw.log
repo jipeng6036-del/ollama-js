@@ -1,0 +1,59 @@
+npm verb cli /home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node /home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@8.19.4
+npm info using node@v16.20.2
+npm timing npm:load:whichnode Completed in 0ms
+npm timing config:load:defaults Completed in 1ms
+npm timing config:load:file:/home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/npmrc Completed in 1ms
+npm timing config:load:builtin Completed in 1ms
+npm timing config:load:cli Completed in 1ms
+npm timing config:load:env Completed in 0ms
+npm timing config:load:file:/home/node/validation/candidate-node16.20.2/.npmrc Completed in 1ms
+npm timing config:load:project Completed in 3ms
+npm timing config:load:file:/home/node/.npmrc Completed in 0ms
+npm timing config:load:user Completed in 0ms
+npm timing config:load:file:/home/node/validation/runtimes/node-v16.20.2-linux-x64/etc/npmrc Completed in 0ms
+npm timing config:load:global Completed in 0ms
+npm timing config:load:validate Completed in 0ms
+npm timing config:load:credentials Completed in 1ms
+npm timing config:load:setEnvs Completed in 0ms
+npm timing config:load Completed in 7ms
+npm timing npm:load:configload Completed in 7ms
+npm timing npm:load:mkdirpcache Completed in 3ms
+npm timing npm:load:mkdirplogs Completed in 0ms
+npm verb title npm run build
+npm verb argv "run" "build"
+npm timing npm:load:setTitle Completed in 1ms
+npm timing config:load:flatten Completed in 1ms
+npm timing npm:load:display Completed in 2ms
+npm verb logfile logs-max:10 dir:/home/node/validation/npm-cache/_logs
+npm verb logfile /home/node/validation/npm-cache/_logs/2026-10-27T15_00_05_989Z-debug-0.log
+npm timing npm:load:logFile Completed in 2ms
+npm timing npm:load:timers Completed in 0ms
+npm timing npm:load:configScope Completed in 0ms
+npm timing npm:load Completed in 15ms
+
+> ollama@0.0.0 build
+> unbuild
+
+ℹ Automatically detected entries: src/index, src/browser [esm] [cjs] [dts]
+ℹ Building ollama
+ℹ Cleaning dist directory: ./dist
+Entry module "src/index.ts" is using named and default exports together. Consumers of your bundle will have to use `chunk.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
+Entry module "src/browser.ts" is using named and default exports together. Consumers of your bundle will have to use `chunk.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
+✔ Build succeeded for ollama
+  dist/index.cjs (total size: 20 kB, chunk size: 1.52 kB, exports: Ollama, default)
+  └─ dist/browser.cjs (18.4 kB)
+
+  dist/browser.cjs (total size: 18.4 kB, chunk size: 18.4 kB, exports: Ollama, default)
+
+  dist/index.mjs (total size: 19.6 kB, chunk size: 1.23 kB, exports: Ollama, default)
+  └─ dist/browser.mjs (18.4 kB)
+
+  dist/browser.mjs (total size: 18.4 kB, chunk size: 18.4 kB, exports: Ollama, default)
+
+Σ Total dist size (byte size): 89 kB
+
+npm timing command:run Completed in 1902ms
+npm verb exit 0
+npm timing npm Completed in 1921ms
+npm info ok 

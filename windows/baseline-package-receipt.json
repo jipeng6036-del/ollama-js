@@ -1,0 +1,47 @@
+{
+  "derivedFrom": "package-receipt.json baseline entries only",
+  "results": [
+    {
+      "kind": "baseline",
+      "tag": "pack",
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "pack",
+        "--json",
+        "--pack-destination",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-package"
+      ],
+      "cwd": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8",
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-pack.raw.log"
+    },
+    {
+      "kind": "baseline",
+      "tag": "install",
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "install",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-package\\ollama-0.0.0.tgz",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "cwd": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-consumer",
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-install.raw.log"
+    },
+    {
+      "kind": "baseline",
+      "tag": "installed-http",
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+        "probe.mjs",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-installed-http.json"
+      ],
+      "cwd": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-consumer",
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-installed-http.raw.log"
+    }
+  ]
+}

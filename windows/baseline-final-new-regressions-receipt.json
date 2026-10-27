@@ -1,0 +1,16 @@
+{
+  "stage": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node20.20.2",
+  "runtime": "20.20.2",
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+        "node_modules/vitest/vitest.mjs",
+        "--run",
+        "test/headers.test.ts"
+      ],
+      "exit": 1,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-final-new-regressions-0.raw.log"
+    }
+  ]
+}

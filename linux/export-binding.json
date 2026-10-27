@@ -1,0 +1,353 @@
+{
+  "runnerExit": 0,
+  "privateExportArchiveSha256": "75e6390b95265a5d6aa81398c0988f89be383f2f2f0e518ac1ac0d66ad3ec395",
+  "privateExportPayloadCount": 80,
+  "publishedFinalPayloadSubset": [
+    {
+      "path": "baseline-installed-files.json",
+      "bytes": 2981,
+      "sha256": "2cbd78869f572df305a7f3425136667ab83858ab4bd48ac4683483db21dcb4ae"
+    },
+    {
+      "path": "baseline-installed-http.json",
+      "bytes": 16090,
+      "sha256": "ce95d287d7f5b28dd13af35a82ddf93fb521e2c1091b19217db8a17523627c66"
+    },
+    {
+      "path": "baseline-installed-http.raw.log",
+      "bytes": 57,
+      "sha256": "6e1023c73153d505d42d36356696ddb6407bc96822dd685768e09e0495c89467"
+    },
+    {
+      "path": "baseline-node16.20.2-build.raw.log",
+      "bytes": 3120,
+      "sha256": "b3208d5f0f0985da159e03ae625be2bdedfc0273aece4a5ab69388defe6b600d"
+    },
+    {
+      "path": "baseline-node16.20.2-ci.raw.log",
+      "bytes": 226407,
+      "sha256": "bfdb61c4cc7d75e5a6f3659aafac0045d8f78ca5a22b5ac7c9bce516884a08d4"
+    },
+    {
+      "path": "baseline-node16.20.2-npm-version.raw.log",
+      "bytes": 1916,
+      "sha256": "c43a35e3dca055b48a86ca4e453da5c1f1c8f77b7782e9fa93a20b08b4b024b8"
+    },
+    {
+      "path": "baseline-node16.20.2-source-after.json",
+      "bytes": 77,
+      "sha256": "0b04a6773ce33ec5c124fdaa552f091093afb727fc58afa3e247da2c676dcde1"
+    },
+    {
+      "path": "baseline-node16.20.2-version.raw.log",
+      "bytes": 9,
+      "sha256": "55b545bc639f6db03e4ad3f275f942eb36b01b7a00df72441a1fb7b395787999"
+    },
+    {
+      "path": "baseline-node18.20.8-build.raw.log",
+      "bytes": 1833,
+      "sha256": "fede1c54d13cf764b096dfadb16f10935c1b03b0916ceaca25f1da2609841ada"
+    },
+    {
+      "path": "baseline-node18.20.8-ci.raw.log",
+      "bytes": 52724,
+      "sha256": "f9f7e4eb08491dfd136c1ebd27f7f4f347fc075626e0f9c230ead9badefe64d3"
+    },
+    {
+      "path": "baseline-node18.20.8-npm-version.raw.log",
+      "bytes": 428,
+      "sha256": "c7e0135da60ae9cc0563e4626b312247ff8fd7382eb9253cb4c64dc8a0d8419b"
+    },
+    {
+      "path": "baseline-node18.20.8-source-after.json",
+      "bytes": 77,
+      "sha256": "0b04a6773ce33ec5c124fdaa552f091093afb727fc58afa3e247da2c676dcde1"
+    },
+    {
+      "path": "baseline-node18.20.8-version.raw.log",
+      "bytes": 9,
+      "sha256": "b7f38aa15f46a5f3d8c42fbce8ff5444b0c2011c063a192a1cbfce57e56dcb95"
+    },
+    {
+      "path": "baseline-node20.20.2-build.raw.log",
+      "bytes": 1833,
+      "sha256": "4dc7028ee1b45dc148574c9e50bb0b10921ef467e1c5693e3c85d12426721e0d"
+    },
+    {
+      "path": "baseline-node20.20.2-ci.raw.log",
+      "bytes": 52771,
+      "sha256": "93fd69278867555a7a5c92565993be34d9de96675a7ba4b639a739481d817021"
+    },
+    {
+      "path": "baseline-node20.20.2-dependency-versions.raw.log",
+      "bytes": 1325,
+      "sha256": "fbb1419167d01701e94052aac68b8cf25a0b7492e588bad88b84a4dafe8b14a8"
+    },
+    {
+      "path": "baseline-node20.20.2-install-coverage.raw.log",
+      "bytes": 39365,
+      "sha256": "f2781310d5b57f790d5104b49113b6ca5c740f5c034afc39443efdb0240f9abe"
+    },
+    {
+      "path": "baseline-node20.20.2-lint.raw.log",
+      "bytes": 2087,
+      "sha256": "b760989550a9cbffab0631b757392f2a6892fccd6ef255faf55d2584d291c6b0"
+    },
+    {
+      "path": "baseline-node20.20.2-npm-version.raw.log",
+      "bytes": 428,
+      "sha256": "4e197c5ed2df15f4478d02a032f31b37a180bc2e518e6fb04fd3a8abc5c17a00"
+    },
+    {
+      "path": "baseline-node20.20.2-package-lock.json",
+      "bytes": 189678,
+      "sha256": "2a6e0aaf550bfe9476c79ed633270fc383d410707a2665d2aa789cb851592108"
+    },
+    {
+      "path": "baseline-node20.20.2-package.json",
+      "bytes": 1259,
+      "sha256": "181515ac6e4e62ee0027f16fcccf07bdb2a615f56906a86dd488fc14a9f5a830"
+    },
+    {
+      "path": "baseline-node20.20.2-source-after.json",
+      "bytes": 123,
+      "sha256": "c74afa5c43c022c18bfb66d54b266a0e136fe167c5cf99a7ec626181ff12feec"
+    },
+    {
+      "path": "baseline-node20.20.2-test-coverage.raw.log",
+      "bytes": 5712,
+      "sha256": "69c779c0caf1a03842af67608fd2eb3ee8b018bf91370e3fc4b96fd4925c1c16"
+    },
+    {
+      "path": "baseline-node20.20.2-version.raw.log",
+      "bytes": 9,
+      "sha256": "fa2f297fd185bb1c8acba036117f05240eaa1f42eeb8902e870982523ae06edf"
+    },
+    {
+      "path": "baseline-package-install.raw.log",
+      "bytes": 865,
+      "sha256": "02644505b8fb2ddf1e87c19c4313a76119aeb2739c13dc28c5e9cbc4ebeba7ea"
+    },
+    {
+      "path": "candidate-final2-installed-files.json",
+      "bytes": 2981,
+      "sha256": "06ee52a651182f054c0561394df180a095dec0d604ca534866d4cc82ea53a0ce"
+    },
+    {
+      "path": "candidate-final2-installed-http.json",
+      "bytes": 15306,
+      "sha256": "8fb6ea6ac8553afed6b467825c6a8d31269213d4d85d7c9cf33c5266bb30b603"
+    },
+    {
+      "path": "candidate-final2-installed-http.raw.log",
+      "bytes": 57,
+      "sha256": "fc0ccfcd9fd7bb905f8aeb2d37ab59c3578f1343de5671e36ec93f699db5ce51"
+    },
+    {
+      "path": "candidate-final2-package-install.raw.log",
+      "bytes": 874,
+      "sha256": "2bcfb199c28f05bfe761aeb779e6499f3d59f4338596d92abcc43047894181b4"
+    },
+    {
+      "path": "candidate-node16.20.2-build.raw.log",
+      "bytes": 3123,
+      "sha256": "4371570e1ba2afd65e9a76da235695955f5d066bf35dddbbef350a1562d1d25e"
+    },
+    {
+      "path": "candidate-node16.20.2-ci.raw.log",
+      "bytes": 174510,
+      "sha256": "a201bac9549caa3183590a34d49c566bbdb6e596499b175b2204e6c875134c9c"
+    },
+    {
+      "path": "candidate-node16.20.2-npm-version.raw.log",
+      "bytes": 1917,
+      "sha256": "74d0ba637764564e22a7b98e39fe51b9ee88d0954070c4052710607f9dc6c84e"
+    },
+    {
+      "path": "candidate-node16.20.2-source-after.json",
+      "bytes": 77,
+      "sha256": "0b04a6773ce33ec5c124fdaa552f091093afb727fc58afa3e247da2c676dcde1"
+    },
+    {
+      "path": "candidate-node16.20.2-version.raw.log",
+      "bytes": 9,
+      "sha256": "55b545bc639f6db03e4ad3f275f942eb36b01b7a00df72441a1fb7b395787999"
+    },
+    {
+      "path": "candidate-node18.20.8-build.raw.log",
+      "bytes": 1836,
+      "sha256": "44b1471746223c7ffa542f92ff0e41c67a661a5060509b49274da0274052270e"
+    },
+    {
+      "path": "candidate-node18.20.8-ci.raw.log",
+      "bytes": 52788,
+      "sha256": "c4a59c868f665bd456da76167947fc3175edbf7c76973da7a8d640b3d52f7d97"
+    },
+    {
+      "path": "candidate-node18.20.8-npm-version.raw.log",
+      "bytes": 429,
+      "sha256": "b0d42f9fe7a9727fd71bafb03cc440d8575b428cc2947eb3f352a889e30c4b9e"
+    },
+    {
+      "path": "candidate-node18.20.8-source-after.json",
+      "bytes": 77,
+      "sha256": "0b04a6773ce33ec5c124fdaa552f091093afb727fc58afa3e247da2c676dcde1"
+    },
+    {
+      "path": "candidate-node18.20.8-version.raw.log",
+      "bytes": 9,
+      "sha256": "b7f38aa15f46a5f3d8c42fbce8ff5444b0c2011c063a192a1cbfce57e56dcb95"
+    },
+    {
+      "path": "candidate-node20.20.2-build.raw.log",
+      "bytes": 1836,
+      "sha256": "aae995deeb5648cbd8306938dedeff9d3fda79df4f90bb5830358c938619c319"
+    },
+    {
+      "path": "candidate-node20.20.2-ci.raw.log",
+      "bytes": 52795,
+      "sha256": "d3612c753f0fd300d397da1c124f2da06405220737ac24559840f7bc53df4716"
+    },
+    {
+      "path": "candidate-node20.20.2-dependency-versions.raw.log",
+      "bytes": 1326,
+      "sha256": "eb266315649ce6ec280ba167efd8f6b2ba116fba1ee132b796181e2f0fa6e6e7"
+    },
+    {
+      "path": "candidate-node20.20.2-install-coverage.raw.log",
+      "bytes": 32389,
+      "sha256": "c68d19936fd5a8db0d4478652a52886c789ca7a52bb9a4391b07a5cf1e8671c0"
+    },
+    {
+      "path": "candidate-node20.20.2-lint.raw.log",
+      "bytes": 2091,
+      "sha256": "2b36f82938ccd1806d0f31db340811aa771c2f7926ed2fa866c904325501b8f8"
+    },
+    {
+      "path": "candidate-node20.20.2-npm-version.raw.log",
+      "bytes": 429,
+      "sha256": "7072fe92d51c9c66e362cc00a16fbe52c93494af6557b7ae4c7974bfe4e0a0c1"
+    },
+    {
+      "path": "candidate-node20.20.2-package-lock.json",
+      "bytes": 189678,
+      "sha256": "2a6e0aaf550bfe9476c79ed633270fc383d410707a2665d2aa789cb851592108"
+    },
+    {
+      "path": "candidate-node20.20.2-package.json",
+      "bytes": 1259,
+      "sha256": "181515ac6e4e62ee0027f16fcccf07bdb2a615f56906a86dd488fc14a9f5a830"
+    },
+    {
+      "path": "candidate-node20.20.2-source-after.json",
+      "bytes": 123,
+      "sha256": "c74afa5c43c022c18bfb66d54b266a0e136fe167c5cf99a7ec626181ff12feec"
+    },
+    {
+      "path": "candidate-node20.20.2-test-coverage.raw.log",
+      "bytes": 5766,
+      "sha256": "33de76e65d7c85d6b258a3ed34ddf2dac6dcbaede82bb18c74510d3d34d61e9b"
+    },
+    {
+      "path": "candidate-node20.20.2-version.raw.log",
+      "bytes": 9,
+      "sha256": "fa2f297fd185bb1c8acba036117f05240eaa1f42eeb8902e870982523ae06edf"
+    },
+    {
+      "path": "config-default-audit.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-default-audit.stdout.raw",
+      "bytes": 5,
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "config-default-fetch-retries.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-default-fetch-retries.stdout.raw",
+      "bytes": 2,
+      "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    {
+      "path": "config-default-fetch-timeout.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-default-fetch-timeout.stdout.raw",
+      "bytes": 7,
+      "sha256": "2d5c043a952d70ef9564858b25a01a30613abfb3d1562f67ef8d089646bbf786"
+    },
+    {
+      "path": "config-default-maxsockets.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-default-maxsockets.stdout.raw",
+      "bytes": 3,
+      "sha256": "238903180cc104ec2c5d8b3f20c5bc61b389ec0a967df8cc208cdc7cd454174f"
+    },
+    {
+      "path": "config-effective-audit.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-effective-audit.stdout.raw",
+      "bytes": 5,
+      "sha256": "a17fcf0a2f50e2d495e4f90ce263410edc183add6c62699a2facbccf60410f74"
+    },
+    {
+      "path": "config-effective-fetch-retries.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-effective-fetch-retries.stdout.raw",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "config-effective-fetch-timeout.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-effective-fetch-timeout.stdout.raw",
+      "bytes": 6,
+      "sha256": "dd3c30165c70119327c37bf6e4f68639ae780d839f03643557b4e242c24587e7"
+    },
+    {
+      "path": "config-effective-maxsockets.stderr.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config-effective-maxsockets.stdout.raw",
+      "bytes": 2,
+      "sha256": "1121cfccd5913f0a63fec40a6ffd44ea64f9dc135c66634ba001d10bcf4302a2"
+    },
+    {
+      "path": "input-source-audit.json",
+      "bytes": 15191,
+      "sha256": "e0c7d836747dc35ac0039ffb410af63433e9f1bd2356b43a1a3d0d80ba15ad36"
+    },
+    {
+      "path": "network-budget.json",
+      "bytes": 369,
+      "sha256": "17e8ab31d3772027df842363b0fcf404c1c143cd8d5ad119bdc8927ef31ac587"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 20708,
+      "sha256": "1d49ccead46c8df4312971cf01f2e96e4f6b2b1a574e5ecf320a6fadb111fba1"
+    }
+  ],
+  "note": "The complete private export additionally retains npm internal debug logs. Only final command/runtime/source/package payload is published here; RAW-MANIFEST.json is the public file authority."
+}

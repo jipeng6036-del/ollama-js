@@ -1,0 +1,25 @@
+
+> ollama@0.0.0 lint
+> eslint ./src/*
+
+
+C:\Users\lyz\AppData\Local\Temp\github-pr-1340-llm-sdk\baseline-node20.20.2\src\browser.ts
+  78:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\lyz\AppData\Local\Temp\github-pr-1340-llm-sdk\baseline-node20.20.2\src\interfaces.ts
+   85:22  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   98:15  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   99:15  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  104:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  106:18  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  281:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  283:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\lyz\AppData\Local\Temp\github-pr-1340-llm-sdk\baseline-node20.20.2\src\utils.ts
+   53:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   53:48  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  101:30  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  254:28  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 12 problems (0 errors, 12 warnings)
+

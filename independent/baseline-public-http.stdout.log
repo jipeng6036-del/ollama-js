@@ -1,0 +1,520 @@
+{
+  "label": "baseline-public-http",
+  "cases": 66,
+  "passed": 42,
+  "failed": 24,
+  "failures": [
+    {
+      "entry": "node",
+      "name": "tuple-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-repeat-mixed",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-repeat-mixed",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-cookie-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-cookie-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-set-cookie-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-set-cookie-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "headers-set-cookie-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "headers-set-cookie-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-whitespace",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "node",
+      "name": "tuple-whitespace",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat-mixed",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat-mixed",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-cookie-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-cookie-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-set-cookie-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-set-cookie-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "headers-set-cookie-repeat",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "headers-set-cookie-repeat",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-whitespace",
+      "method": "list",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-whitespace",
+      "method": "generate",
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      }
+    }
+  ]
+}

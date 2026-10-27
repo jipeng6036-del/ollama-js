@@ -1,0 +1,78 @@
+{
+  "createdAtUtc": "2026-10-27T14:45:43.333989+00:00",
+  "status": "final-grouping-required-controls-pass",
+  "sourceTreeOwnerDeclared": "f5e7f5ec4286a58f9e1a444181aaeee2574a5f2c",
+  "finalUtils": {
+    "bytes": 11708,
+    "sha256": "b39d98ea534017f679d671bb261a18388d200347897369fef8f14e8ef4007b6e"
+  },
+  "baselineUtils": "ed708a24f5502e5fe15b0847c317580b46b93f8c151d8e60adbfe24766ed9c97",
+  "publicHTTP": {
+    "cases": 66,
+    "pass": 66,
+    "fail": 0,
+    "sameProbeSha256": "2ddd746b5734e4af8b4357aa0913528f2503795091834d6e6a4d0156d02edeb8",
+    "transport": "real own HTTP server; SDK public Node/browser list+generate; actual Node24.14 runtime"
+  },
+  "authUnitControl": {
+    "calls": 60,
+    "comparisonPairs": 30,
+    "realNetworkAttempts": 0,
+    "newEnvironmentBearerInjection": [],
+    "original24Calls": "All6 original representations/cases x2entries x2variants preserve headers exactly.",
+    "mixedSingletonAndOtherDuplicateGroup": "Both whitespace Authorization and uppercase AUTHORIZATION preserve baseline credential selection while X-Values combines.",
+    "duplicateAuthorization": "7 combinations x2entries x2variants: no baseline-without-env to candidate-with-env transition. Empty+empty changes existing env injection to no injection because merged value comma-space is truthy; recorded, not claimed full credential-choice equivalence.",
+    "transport": "Config.fetch UNIT stub, global fetch throwing guard; synthetic-env-token only; no real cloud/model calls. Child environment restored in finally."
+  },
+  "review": "Grouping applies Headers canonicalization only to repeated canonical names; singleton tuple key/value retained exactly, record behavior untouched. Required targeted auth blocker from obsolete d68aae candidate is resolved in final source. Existing PR304 semantics not independently fixed or claimed.",
+  "supersedes": "d68aae7b two-line candidate review/auth findings for final acceptance; old raw artifacts retained under their own source hashes.",
+  "sourceEdits": 0,
+  "networkRequests": 0,
+  "evidence": [
+    {
+      "file": "final-grouping-auth-control.execution.json",
+      "bytes": 684,
+      "sha256": "182502677e8cc76fd0d8b67f0c7460d66bc67d6d9b5475d1170ba10b57bf627a"
+    },
+    {
+      "file": "final-grouping-auth-control.json",
+      "bytes": 111759,
+      "sha256": "eb21363bc5f7a9f7d5b84c4dbcc6bcb3e699945d4fa9acf3ca54617c3df46d07"
+    },
+    {
+      "file": "final-grouping-auth-control.mjs",
+      "bytes": 4996,
+      "sha256": "6b420f78a34c3c59cc167bf0f1ae138dd4d2af1934738b4697c54fd493328486"
+    },
+    {
+      "file": "final-grouping-auth-control.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "final-grouping-auth-control.stdout.log",
+      "bytes": 45566,
+      "sha256": "d70b22d5f27760ce95d6b06e1f652bfd8378894e52405af4b9b88f07083624b6"
+    },
+    {
+      "file": "final-grouping-public-http.execution.json",
+      "bytes": 883,
+      "sha256": "619cd90fb9713efca63fed240d7a985f95b5f23ecd50c215e17e261cd8e2be6a"
+    },
+    {
+      "file": "final-grouping-public-http.json",
+      "bytes": 158112,
+      "sha256": "50965bbffefe8481ac4c9437e32068ca656dcbb9fb196bce7769a2900b09048d"
+    },
+    {
+      "file": "final-grouping-public-http.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "final-grouping-public-http.stdout.log",
+      "bytes": 108,
+      "sha256": "c076a83e5d67a6cce98d8d690fa38808ef339879d438e1f009abd0bf8cfce356"
+    }
+  ]
+}

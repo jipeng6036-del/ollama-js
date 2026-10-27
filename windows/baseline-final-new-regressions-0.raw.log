@@ -1,0 +1,144 @@
+
+ RUN  v2.1.9 C:/Users/lyz/AppData/Local/Temp/github-pr-1340-llm-sdk/baseline-node20.20.2
+
+ ❯ test/headers.test.ts (16 tests | 14 failed) 35ms
+   × node client custom header values > preserves repeated tuple header values: ["X-Context","first"] 22ms
+     → expected 'second' to be 'first, second' // Object.is equality
+   × node client custom header values > preserves repeated tuple header values: ["X-Context","first"] 2ms
+     → expected 'third, second' to be 'first, second, third' // Object.is equality
+   × node client custom header values > preserves repeated tuple header values: ["Cookie","first=1"] 1ms
+     → expected 'second=2' to be 'first=1; second=2' // Object.is equality
+   × node client custom header values > preserves repeated tuple header values: ["Set-Cookie","first=1"] 1ms
+     → expected 'second=2' to be 'first=1, second=2' // Object.is equality
+   × node client custom header values > preserves all values in a Headers instance 1ms
+     → expected 'second=2' to be 'first=1, second=2' // Object.is equality
+   × browser client custom header values > preserves repeated tuple header values: ["X-Context","first"] 1ms
+     → expected 'second' to be 'first, second' // Object.is equality
+   × browser client custom header values > preserves repeated tuple header values: ["X-Context","first"] 1ms
+     → expected 'third, second' to be 'first, second, third' // Object.is equality
+   × browser client custom header values > preserves repeated tuple header values: ["Cookie","first=1"] 1ms
+     → expected 'second=2' to be 'first=1; second=2' // Object.is equality
+   × browser client custom header values > preserves repeated tuple header values: ["Set-Cookie","first=1"] 1ms
+     → expected 'second=2' to be 'first=1, second=2' // Object.is equality
+   × browser client custom header values > preserves all values in a Headers instance 1ms
+     → expected 'second=2' to be 'first=1, second=2' // Object.is equality
+   × node single authorization header compatibility > preserves Authorization while combining unrelated header values 1ms
+     → expected 'second' to be 'first, second' // Object.is equality
+   × node single authorization header compatibility > preserves AUTHORIZATION while combining unrelated header values 1ms
+     → expected 'second' to be 'first, second' // Object.is equality
+   × browser single authorization header compatibility > preserves Authorization while combining unrelated header values 1ms
+     → expected 'second' to be 'first, second' // Object.is equality
+   × browser single authorization header compatibility > preserves AUTHORIZATION while combining unrelated header values 0ms
+     → expected 'second' to be 'first, second' // Object.is equality
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 14 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  test/headers.test.ts > node client custom header values > preserves repeated tuple header values: ["X-Context","first"]
+ FAIL  test/headers.test.ts > browser client custom header values > preserves repeated tuple header values: ["X-Context","first"]
+AssertionError: expected 'second' to be 'first, second' // Object.is equality
+
+Expected: "first, second"
+Received: "second"
+
+ ❯ test/headers.test.ts:37:33
+     35|       const actual = new Headers(fetch.mock.calls[0][1].headers)
+     36|       for (const [key] of headers) {
+     37|         expect(actual.get(key)).toBe(expected.get(key))
+       |                                 ^
+     38|       }
+     39|     })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/14]⎯
+
+ FAIL  test/headers.test.ts > node client custom header values > preserves repeated tuple header values: ["X-Context","first"]
+ FAIL  test/headers.test.ts > browser client custom header values > preserves repeated tuple header values: ["X-Context","first"]
+AssertionError: expected 'third, second' to be 'first, second, third' // Object.is equality
+
+Expected: "first, second, third"
+Received: "third, second"
+
+ ❯ test/headers.test.ts:37:33
+     35|       const actual = new Headers(fetch.mock.calls[0][1].headers)
+     36|       for (const [key] of headers) {
+     37|         expect(actual.get(key)).toBe(expected.get(key))
+       |                                 ^
+     38|       }
+     39|     })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/14]⎯
+
+ FAIL  test/headers.test.ts > node client custom header values > preserves repeated tuple header values: ["Cookie","first=1"]
+ FAIL  test/headers.test.ts > browser client custom header values > preserves repeated tuple header values: ["Cookie","first=1"]
+AssertionError: expected 'second=2' to be 'first=1; second=2' // Object.is equality
+
+Expected: "first=1; second=2"
+Received: "second=2"
+
+ ❯ test/headers.test.ts:37:33
+     35|       const actual = new Headers(fetch.mock.calls[0][1].headers)
+     36|       for (const [key] of headers) {
+     37|         expect(actual.get(key)).toBe(expected.get(key))
+       |                                 ^
+     38|       }
+     39|     })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/14]⎯
+
+ FAIL  test/headers.test.ts > node client custom header values > preserves repeated tuple header values: ["Set-Cookie","first=1"]
+ FAIL  test/headers.test.ts > browser client custom header values > preserves repeated tuple header values: ["Set-Cookie","first=1"]
+AssertionError: expected 'second=2' to be 'first=1, second=2' // Object.is equality
+
+Expected: "first=1, second=2"
+Received: "second=2"
+
+ ❯ test/headers.test.ts:37:33
+     35|       const actual = new Headers(fetch.mock.calls[0][1].headers)
+     36|       for (const [key] of headers) {
+     37|         expect(actual.get(key)).toBe(expected.get(key))
+       |                                 ^
+     38|       }
+     39|     })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/14]⎯
+
+ FAIL  test/headers.test.ts > node client custom header values > preserves all values in a Headers instance
+ FAIL  test/headers.test.ts > browser client custom header values > preserves all values in a Headers instance
+AssertionError: expected 'second=2' to be 'first=1, second=2' // Object.is equality
+
+Expected: "first=1, second=2"
+Received: "second=2"
+
+ ❯ test/headers.test.ts:54:40
+     52| 
+     53|       const actual = new Headers(fetch.mock.calls[0][1].headers)
+     54|       expect(actual.get('set-cookie')).toBe(headers.get('set-cookie'))
+       |                                        ^
+     55|       expect(actual.get('x-context')).toBe(headers.get('x-context'))
+     56|     })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/14]⎯
+
+ FAIL  test/headers.test.ts > node single authorization header compatibility > preserves Authorization while combining unrelated header values
+ FAIL  test/headers.test.ts > node single authorization header compatibility > preserves AUTHORIZATION while combining unrelated header values
+ FAIL  test/headers.test.ts > browser single authorization header compatibility > preserves Authorization while combining unrelated header values
+ FAIL  test/headers.test.ts > browser single authorization header compatibility > preserves AUTHORIZATION while combining unrelated header values
+AssertionError: expected 'second' to be 'first, second' // Object.is equality
+
+Expected: "first, second"
+Received: "second"
+
+ ❯ test/headers.test.ts:108:54
+    106|           expect(new Headers(actual).get('authorization')).toBe('')
+    107|         }
+    108|         expect(new Headers(actual).get('x-context')).toBe('first, seco…
+       |                                                      ^
+    109|       } finally {
+    110|         vi.unstubAllEnvs()
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/14]⎯
+
+ Test Files  1 failed (1)
+      Tests  14 failed | 2 passed (16)
+   Start at  07:28:51
+   Duration  1.58s (transform 126ms, setup 0ms, collect 166ms, tests 35ms, environment 0ms, prepare 130ms)
+

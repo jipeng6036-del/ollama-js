@@ -1,0 +1,111 @@
+[
+  {
+    "id": "ollama@0.0.0",
+    "name": "ollama",
+    "version": "0.0.0",
+    "size": 27771,
+    "unpackedSize": 140251,
+    "shasum": "70a15b3bb1d79a04117d1b26a7d34d64fdd0cabf",
+    "integrity": "sha512-rwdQZ9q6+jFfObnjin3izPABi5N8xVNUxUk+CA4UocM6HyDkz8/X/rxTXRzu/K/EWA11dEwK5JNVSjjR2pexXQ==",
+    "filename": "ollama-0.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1061,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 14189,
+        "mode": 420
+      },
+      {
+        "path": "dist/browser.cjs",
+        "size": 17992,
+        "mode": 420
+      },
+      {
+        "path": "dist/browser.d.cts",
+        "size": 14963,
+        "mode": 420
+      },
+      {
+        "path": "dist/browser.d.mts",
+        "size": 14963,
+        "mode": 420
+      },
+      {
+        "path": "dist/browser.d.ts",
+        "size": 14963,
+        "mode": 420
+      },
+      {
+        "path": "dist/browser.mjs",
+        "size": 17908,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.cjs",
+        "size": 1518,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.d.cts",
+        "size": 1525,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.d.mts",
+        "size": 1525,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.d.ts",
+        "size": 1523,
+        "mode": 420
+      },
+      {
+        "path": "dist/index.mjs",
+        "size": 1229,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 1222,
+        "mode": 420
+      },
+      {
+        "path": "src/browser.ts",
+        "size": 13946,
+        "mode": 420
+      },
+      {
+        "path": "src/constant.ts",
+        "size": 98,
+        "mode": 420
+      },
+      {
+        "path": "src/index.ts",
+        "size": 2214,
+        "mode": 420
+      },
+      {
+        "path": "src/interfaces.ts",
+        "size": 8135,
+        "mode": 420
+      },
+      {
+        "path": "src/utils.ts",
+        "size": 11246,
+        "mode": 420
+      },
+      {
+        "path": "src/version.ts",
+        "size": 31,
+        "mode": 420
+      }
+    ],
+    "entryCount": 19,
+    "bundled": []
+  }
+]

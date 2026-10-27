@@ -1,0 +1,27 @@
+{
+  "stage": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-node18.20.8",
+  "runtime": "18.20.8",
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-node18.20.8-build-0.raw.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-node18.20.8-build-1.raw.log"
+    }
+  ]
+}

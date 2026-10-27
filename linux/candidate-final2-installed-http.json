@@ -1,0 +1,721 @@
+{
+  "runtime": "v20.20.2",
+  "packageSource": "independently installed local npm-pack tarball",
+  "count": 48,
+  "passed": 48,
+  "failed": 0,
+  "results": [
+    {
+      "entry": "esm-node",
+      "profile": "tuple-same",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "esm-node",
+      "profile": "tuple-same",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "tuple-same",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "tuple-same",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "tuple-same",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "tuple-same",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "tuple-same",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "tuple-same",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-node",
+      "profile": "tuple-casing",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      }
+    },
+    {
+      "entry": "esm-node",
+      "profile": "tuple-casing",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "tuple-casing",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      }
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "tuple-casing",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "tuple-casing",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      }
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "tuple-casing",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "tuple-casing",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      }
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "tuple-casing",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second, third"
+      },
+      "actual": {
+        "x-context": "first, second, third"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-node",
+      "profile": "cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      }
+    },
+    {
+      "entry": "esm-node",
+      "profile": "cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      }
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      }
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      }
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "cookie": "first=1; second=2"
+      },
+      "actual": {
+        "cookie": "first=1; second=2"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-node",
+      "profile": "set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "esm-node",
+      "profile": "set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-node",
+      "profile": "headers-set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "esm-node",
+      "profile": "headers-set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "headers-set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "headers-set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "headers-set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "headers-set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "headers-set-cookie",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      }
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "headers-set-cookie",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "actual": {
+        "set-cookie": [
+          "first=1, second=2"
+        ]
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-node",
+      "profile": "record",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "esm-node",
+      "profile": "record",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "record",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "esm-browser",
+      "profile": "record",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "record",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "cjs-node",
+      "profile": "record",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "record",
+      "method": "list",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      }
+    },
+    {
+      "entry": "cjs-browser",
+      "profile": "record",
+      "method": "generate-stream",
+      "pass": true,
+      "mismatches": [],
+      "expected": {
+        "x-context": "first, second"
+      },
+      "actual": {
+        "x-context": "first, second"
+      },
+      "streamContent": "边界☃尾"
+    }
+  ]
+}

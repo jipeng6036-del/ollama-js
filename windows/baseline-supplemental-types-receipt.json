@@ -1,0 +1,43 @@
+{
+  "derivedFrom": "supplemental-types-receipt.json baseline entries only",
+  "results": [
+    {
+      "kind": "baseline",
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "i",
+        "--no-save",
+        "@types/node@20",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-supplemental-types-0.raw.log"
+    },
+    {
+      "kind": "baseline",
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--lib",
+        "es2020,dom"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-supplemental-types-1.raw.log"
+    },
+    {
+      "kind": "baseline",
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v20.20.2-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "ls",
+        "@types/node",
+        "--json"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-supplemental-types-2.raw.log"
+    }
+  ]
+}

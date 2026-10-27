@@ -1,0 +1,38 @@
+npm verbose cli /home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node /home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@10.8.2
+npm info using node@v20.20.2
+npm verbose title npm run lint
+npm verbose argv "run" "lint"
+npm verbose logfile logs-max:10 dir:/home/node/validation/npm-cache/_logs/2026-10-27T15_07_45_009Z-
+npm verbose logfile /home/node/validation/npm-cache/_logs/2026-10-27T15_07_45_009Z-debug-0.log
+
+> ollama@0.0.0 lint
+> eslint ./src/*
+
+
+/home/node/validation/candidate-node20.20.2/src/browser.ts
+  78:52  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/home/node/validation/candidate-node20.20.2/src/interfaces.ts
+   85:22  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   98:15  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   99:15  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  104:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  106:18  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  281:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  283:32  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/home/node/validation/candidate-node20.20.2/src/utils.ts
+   53:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   53:48  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  101:30  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  270:28  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 12 problems (0 errors, 12 warnings)
+
+npm verbose cwd /home/node/validation/candidate-node20.20.2
+npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+npm verbose node v20.20.2
+npm verbose npm  v10.8.2
+npm verbose exit 0
+npm info ok

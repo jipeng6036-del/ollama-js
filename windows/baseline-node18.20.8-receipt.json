@@ -1,0 +1,46 @@
+{
+  "head": "c276d078eee37a0df003b9ee2120ec70327f32e9",
+  "sourceManifest": "baseline-source-manifest.json",
+  "stage": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8",
+  "runtimeArchiveSha256": "1a1e40260a6facba83636e4cd0ba01eb5bd1386896824b36645afba44857384a",
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node.exe",
+        "--version"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8-0.raw.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "--version"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8-1.raw.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8-2.raw.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node.exe",
+        "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\node-v18.20.8-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "rawLog": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8-3.raw.log"
+    }
+  ]
+}

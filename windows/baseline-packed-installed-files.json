@@ -1,0 +1,119 @@
+{
+  "tarballSha256": "84db561038c38d4a462232be2509ef15e3de887129989c4ac0b0f67936a3b6b6",
+  "files": [
+    {
+      "path": "LICENSE",
+      "mode": "0o644",
+      "sha256": "6687182ea5e41cd2b2efb85000a1ad694916330d4df883ef25a5075f3c197daa",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/browser.cjs",
+      "mode": "0o644",
+      "sha256": "cf42d24b18470735b90ec60644dc42ef42c57e574923c6e4e50c8b3d71c0c3fd",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/index.cjs",
+      "mode": "0o644",
+      "sha256": "fa115d09c737ab8be3efe37ede5df9a60b609bc2a28f171cca9ac996a324f0db",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/browser.d.cts",
+      "mode": "0o644",
+      "sha256": "d8f184f9175932a9066d409279a4af61b73922c7d827809becbdb242c8f12362",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/index.d.cts",
+      "mode": "0o644",
+      "sha256": "9c6ddfb338f394685b7ecc3f632ff2d6cbf3b39fff5d6f7b5e3ddf27cb0766dd",
+      "installedEqual": true
+    },
+    {
+      "path": "package.json",
+      "mode": "0o644",
+      "sha256": "c0c01d3914fe0d996f560ce4a1e61bc120ad76e694c0994012946f8ca5748b76",
+      "installedEqual": true
+    },
+    {
+      "path": "README.md",
+      "mode": "0o644",
+      "sha256": "ce66a805bf199a639e9b4c84ee254bf8398269858ab536271bd5d05e56ffe642",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/browser.mjs",
+      "mode": "0o644",
+      "sha256": "82bc2ff2a7af5229817e8f8efc33b8e9a7b635248125800b6f28ce6e3d55b0a1",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/index.mjs",
+      "mode": "0o644",
+      "sha256": "c7dc8470f01a6034311054290c70f16b6f4931d04e1ea83e48338bb5b740c82e",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/browser.d.mts",
+      "mode": "0o644",
+      "sha256": "d8f184f9175932a9066d409279a4af61b73922c7d827809becbdb242c8f12362",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/index.d.mts",
+      "mode": "0o644",
+      "sha256": "9e875cb3433b3eca72b9f2ad450207609177bdf2ecdc7bfce9db56d80c414711",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/browser.d.ts",
+      "mode": "0o644",
+      "sha256": "d8f184f9175932a9066d409279a4af61b73922c7d827809becbdb242c8f12362",
+      "installedEqual": true
+    },
+    {
+      "path": "src/browser.ts",
+      "mode": "0o644",
+      "sha256": "22fd45112a7b93667436804474a9a35f24bb1fa60fe90557e252744ce64d04a7",
+      "installedEqual": true
+    },
+    {
+      "path": "src/constant.ts",
+      "mode": "0o644",
+      "sha256": "e30940d6f3f43ed40385be119d6c5371860930775a9d9f63e6791ff54751ecb2",
+      "installedEqual": true
+    },
+    {
+      "path": "dist/index.d.ts",
+      "mode": "0o644",
+      "sha256": "5b87bf461687957a817822be527762a0d94f373d93a05efb055121998e63d081",
+      "installedEqual": true
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "0o644",
+      "sha256": "1fa883896394025d4b3614246b4ec21f7369a30113d3986ca1fd699ddf72e3e2",
+      "installedEqual": true
+    },
+    {
+      "path": "src/interfaces.ts",
+      "mode": "0o644",
+      "sha256": "3e0610c6d75ba29c22762defce074d8dd7692fd3065e873670e0a2ba84452dfa",
+      "installedEqual": true
+    },
+    {
+      "path": "src/utils.ts",
+      "mode": "0o644",
+      "sha256": "ed708a24f5502e5fe15b0847c317580b46b93f8c151d8e60adbfe24766ed9c97",
+      "installedEqual": true
+    },
+    {
+      "path": "src/version.ts",
+      "mode": "0o644",
+      "sha256": "91411f404773523a692afbbe77a48ffe1a66dc3bf7c01d5413ab6fb2fe5ddd59",
+      "installedEqual": true
+    }
+  ]
+}

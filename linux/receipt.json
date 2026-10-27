@@ -1,0 +1,668 @@
+[
+  {
+    "tag": "baseline-node16.20.2-version",
+    "cwd": "/home/node/validation/baseline-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.0035888690035790205,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node16.20.2-npm-version",
+    "cwd": "/home/node/validation/baseline-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.16412336297798902,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node16.20.2-ci",
+    "cwd": "/home/node/validation/baseline-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ci"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 44.33103239902994,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node16.20.2-build",
+    "cwd": "/home/node/validation/baseline-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "build"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 2.0435531339608133,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node18.20.8-version",
+    "cwd": "/home/node/validation/baseline-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.007745851995423436,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node18.20.8-npm-version",
+    "cwd": "/home/node/validation/baseline-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.11426785599905998,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node18.20.8-ci",
+    "cwd": "/home/node/validation/baseline-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ci"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 5.527609328972176,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node18.20.8-build",
+    "cwd": "/home/node/validation/baseline-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "build"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 1.5678937759948894,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-version",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.0035453260061331093,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-npm-version",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.06382725900039077,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-ci",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ci"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 4.073974161990918,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-build",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "build"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 1.8697716370224953,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-install-coverage",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "i",
+      "-D",
+      "@vitest/coverage-v8@^2.1.6"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 444.40368976601167,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-lint",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "lint"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 1.0666549769812264,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-test-coverage",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "test",
+      "--",
+      "--coverage"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 2.993148533976637,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-node20.20.2-dependency-versions",
+    "cwd": "/home/node/validation/baseline-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ls",
+      "vitest",
+      "@vitest/coverage-v8",
+      "--json"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.4651532599818893,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node16.20.2-version",
+    "cwd": "/home/node/validation/candidate-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.0035396949970163405,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node16.20.2-npm-version",
+    "cwd": "/home/node/validation/candidate-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.16410758398706093,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node16.20.2-ci",
+    "cwd": "/home/node/validation/candidate-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ci"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 15.155142257979605,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node16.20.2-build",
+    "cwd": "/home/node/validation/candidate-node16.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v16.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "build"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 2.10052697599167,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node18.20.8-version",
+    "cwd": "/home/node/validation/candidate-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.007696649990975857,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node18.20.8-npm-version",
+    "cwd": "/home/node/validation/candidate-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.114124521962367,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node18.20.8-ci",
+    "cwd": "/home/node/validation/candidate-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ci"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 4.223409204976633,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node18.20.8-build",
+    "cwd": "/home/node/validation/candidate-node18.20.8",
+    "command": [
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v18.20.8-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "build"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 1.5673335150349885,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-version",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.0037043060292489827,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-npm-version",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "--version"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.06392801203764975,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-ci",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ci"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 4.073800987971481,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-build",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "build"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 2.037981645029504,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-install-coverage",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "i",
+      "-D",
+      "@vitest/coverage-v8@^2.1.6"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 444.93063250900013,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-lint",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "run",
+      "lint"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 1.116635693993885,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-test-coverage",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "test",
+      "--",
+      "--coverage"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 3.2507651599589735,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-node20.20.2-dependency-versions",
+    "cwd": "/home/node/validation/candidate-node20.20.2",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "ls",
+      "vitest",
+      "@vitest/coverage-v8",
+      "--json"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.5152683679480106,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-package-install",
+    "cwd": "/home/node/validation/baseline-consumer",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "install",
+      "/home/node/validation/baseline-package.tgz"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 1.4680731580010615,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "baseline-installed-http",
+    "cwd": "/home/node/validation/baseline-consumer",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "probe.mjs",
+      "/home/node/validation/output/baseline-installed-http.json"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.16430270398268476,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-final2-package-install",
+    "cwd": "/home/node/validation/candidate-final2-consumer",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "install",
+      "/home/node/validation/candidate-package.tgz"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.26462073501897976,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  },
+  {
+    "tag": "candidate-final2-installed-http",
+    "cwd": "/home/node/validation/candidate-final2-consumer",
+    "command": [
+      "/home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node",
+      "probe.mjs",
+      "/home/node/validation/output/candidate-final2-installed-http.json"
+    ],
+    "exit": 0,
+    "timedOut": false,
+    "seconds": 0.16425767302280292,
+    "environment": {
+      "npm_config_fetch_timeout": "60000",
+      "npm_config_fetch_retries": "1",
+      "npm_config_maxsockets": "3",
+      "npm_config_loglevel": "verbose"
+    }
+  }
+]

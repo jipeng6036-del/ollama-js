@@ -1,0 +1,19 @@
+{
+  "repository": "ollama/ollama-js",
+  "base": "c276d078eee37a0df003b9ee2120ec70327f32e9",
+  "pullRequestCreationPolicy": "all",
+  "allowForking": true,
+  "openPRsRead": 33,
+  "sameIssueFound": false,
+  "relatedPRs": [
+    100,
+    203,
+    276,
+    290,
+    304,
+    305
+  ],
+  "publicPolicyOrApprovalPrerequisiteFound": false,
+  "evidence": "Read-only final independent admission review; full third-party PR bodies/comments remain private.",
+  "source": "https://github.com/ollama/ollama-js/tree/c276d078eee37a0df003b9ee2120ec70327f32e9"
+}

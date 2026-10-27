@@ -1,0 +1,6034 @@
+{
+  "label": "baseline-public-http",
+  "node": "v24.14.0",
+  "platform": "win32",
+  "arch": "x64",
+  "checkout": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8",
+  "startedLocalHost": "http://127.0.0.1:8176",
+  "externalNetworkUsed": false,
+  "sourceFiles": {
+    "src/utils.ts": {
+      "bytes": 11246,
+      "sha256": "ed708a24f5502e5fe15b0847c317580b46b93f8c151d8e60adbfe24766ed9c97"
+    },
+    "src/browser.ts": {
+      "bytes": 13946,
+      "sha256": "22fd45112a7b93667436804474a9a35f24bb1fa60fe90557e252744ce64d04a7"
+    },
+    "src/index.ts": {
+      "bytes": 2214,
+      "sha256": "1fa883896394025d4b3614246b4ec21f7369a30113d3986ca1fd699ddf72e3e2"
+    },
+    "src/interfaces.ts": {
+      "bytes": 8135,
+      "sha256": "3e0610c6d75ba29c22762defce074d8dd7692fd3065e873670e0a2ba84452dfa"
+    },
+    "package.json": {
+      "bytes": 1222,
+      "sha256": "c0c01d3914fe0d996f560ce4a1e61bc120ad76e694c0994012946f8ca5748b76"
+    },
+    "package-lock.json": {
+      "bytes": 161956,
+      "sha256": "f10a56634daf7da7442990cb3dba3cbf3edf43310717a5d18be47ea02609b876"
+    },
+    "dist/index.mjs": {
+      "bytes": 1229,
+      "sha256": "c7dc8470f01a6034311054290c70f16b6f4931d04e1ea83e48338bb5b740c82e"
+    },
+    "dist/browser.mjs": {
+      "bytes": 17908,
+      "sha256": "82bc2ff2a7af5229817e8f8efc33b8e9a7b635248125800b6f28ce6e3d55b0a1"
+    }
+  },
+  "cases": 66,
+  "passed": 42,
+  "failed": 24,
+  "receipts": [
+    {
+      "entry": "node",
+      "name": "tuple-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-mixed-case",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "tuple-mixed-case",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "tuple-repeat-mixed",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second, third"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second, third",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second, third",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "third, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "third, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-repeat-mixed",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second, third"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second, third",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second, third",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "third, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "third, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-single",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "tuple-single",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "headers-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "headers-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "record-merged",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "record-merged",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "record-case-variants",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "record-case-variants",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "tuple-default-control",
+      "method": "list",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "tuple-default-control",
+      "method": "generate",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "record-default-control",
+      "method": "list",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "CONTENT-TYPE",
+          "text/plain",
+          "ACCEPT",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "record-default-control",
+      "method": "generate",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "CONTENT-TYPE",
+          "text/plain",
+          "ACCEPT",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "headers-default-control",
+      "method": "list",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "headers-default-control",
+      "method": "generate",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "tuple-cookie-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "cookie": "a=1; b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "cookie": "a=1; b=2",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "cookie",
+          "a=1; b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie": "b=2",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-cookie-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "cookie": "a=1; b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "cookie": "a=1; b=2",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "cookie",
+          "a=1; b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie": "b=2",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-set-cookie-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-set-cookie-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "headers-set-cookie-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "headers-set-cookie-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-whitespace",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "tuple-whitespace",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "node",
+      "name": "no-headers",
+      "method": "list",
+      "expectedHeaders": {},
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "no-headers",
+      "method": "generate",
+      "expectedHeaders": {},
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "client-a-first",
+      "method": "list",
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client": "alpha",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client",
+          "alpha",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "client-b",
+      "method": "list",
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client": "beta",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client",
+          "beta",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "pass": true
+    },
+    {
+      "entry": "node",
+      "name": "client-a-second",
+      "method": "list",
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client": "alpha",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client",
+          "alpha",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-mixed-case",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-mixed-case",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat-mixed",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second, third"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second, third",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second, third",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "third, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "third, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-repeat-mixed",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second, third"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second, third",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second, third",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "third, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "third, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second, third",
+          "sdk": "third, second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-single",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-single",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "headers-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "headers-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "record-merged",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "record-merged",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "record-case-variants",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "record-case-variants",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "X-Probe-Values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first, second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "X-Probe-Values",
+          "first, second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "first, second",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-default-control",
+      "method": "list",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-default-control",
+      "method": "generate",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "record-default-control",
+      "method": "list",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "CONTENT-TYPE",
+          "text/plain",
+          "ACCEPT",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "record-default-control",
+      "method": "generate",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "CONTENT-TYPE",
+          "text/plain",
+          "ACCEPT",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "headers-default-control",
+      "method": "list",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "headers-default-control",
+      "method": "generate",
+      "expectedHeaders": {
+        "accept": "text/plain",
+        "content-type": "text/plain",
+        "x-probe-values": "first"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "text/plain",
+          "accept": "text/plain",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "content-type",
+          "text/plain",
+          "accept",
+          "text/plain",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "first",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "first",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first",
+          "sdk": "first",
+          "equal": true
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-cookie-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "cookie": "a=1; b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "cookie": "a=1; b=2",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "cookie",
+          "a=1; b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie": "b=2",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-cookie-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "cookie": "a=1; b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "cookie": "a=1; b=2",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "cookie",
+          "a=1; b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie": "b=2",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "cookie",
+          "native": "a=1; b=2",
+          "sdk": "b=2",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-set-cookie-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-set-cookie-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "headers-set-cookie-repeat",
+      "method": "list",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "headers-set-cookie-repeat",
+      "method": "generate",
+      "expectedHeaders": {
+        "set-cookie": "b=2"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "set-cookie": [
+            "a=1, b=2"
+          ],
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "set-cookie",
+          "a=1, b=2",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie": [
+            "b=2"
+          ],
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "set-cookie",
+          "b=2",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "set-cookie",
+          "native": [
+            "a=1, b=2"
+          ],
+          "sdk": [
+            "b=2"
+          ],
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-whitespace",
+      "method": "list",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-whitespace",
+      "method": "generate",
+      "expectedHeaders": {
+        "x-probe-values": "first, second"
+      },
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "x-probe-values": "first, second",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "x-probe-values",
+          "first, second",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values": "second",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-probe-values",
+          "second",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [
+        {
+          "key": "x-probe-values",
+          "native": "first, second",
+          "sdk": "second",
+          "equal": false
+        }
+      ],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": false
+    },
+    {
+      "entry": "browser",
+      "name": "no-headers",
+      "method": "list",
+      "expectedHeaders": {},
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "comparisons": [],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "no-headers",
+      "method": "generate",
+      "expectedHeaders": {},
+      "native": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "accept": "*/*",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "user-agent": "node",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "accept",
+          "*/*",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "user-agent",
+          "node",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "sdk": {
+        "method": "POST",
+        "path": "/api/generate",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "55"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate",
+          "content-length",
+          "55"
+        ],
+        "body": "{\"model\":\"local-probe\",\"prompt\":\"local\",\"stream\":false}"
+      },
+      "comparisons": [],
+      "controls": {
+        "contentType": true,
+        "accept": true,
+        "callerUnchanged": true,
+        "expectedPath": true,
+        "expectedResult": true
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "client-a-first",
+      "method": "list",
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client": "alpha",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client",
+          "alpha",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "client-b",
+      "method": "list",
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client": "beta",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client",
+          "beta",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "pass": true
+    },
+    {
+      "entry": "browser",
+      "name": "client-a-second",
+      "method": "list",
+      "sdk": {
+        "method": "GET",
+        "path": "/api/tags",
+        "headers": {
+          "host": "127.0.0.1:8176",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "accept": "application/json",
+          "user-agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client": "alpha",
+          "accept-language": "*",
+          "sec-fetch-mode": "cors",
+          "accept-encoding": "gzip, deflate"
+        },
+        "rawHeaders": [
+          "host",
+          "127.0.0.1:8176",
+          "connection",
+          "keep-alive",
+          "Content-Type",
+          "application/json",
+          "Accept",
+          "application/json",
+          "User-Agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+          "x-client",
+          "alpha",
+          "accept-language",
+          "*",
+          "sec-fetch-mode",
+          "cors",
+          "accept-encoding",
+          "gzip, deflate"
+        ],
+        "body": ""
+      },
+      "pass": true
+    }
+  ]
+}

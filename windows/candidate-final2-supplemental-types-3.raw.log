@@ -1,0 +1,28 @@
+{
+  "version": "0.0.0",
+  "name": "ollama",
+  "dependencies": {
+    "vitest": {
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/vitest/-/vitest-2.1.9.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@types/node": {
+          "version": "20.19.43",
+          "resolved": "https://registry.npmjs.org/@types/node/-/node-20.19.43.tgz",
+          "overridden": false
+        },
+        "vite": {
+          "version": "5.4.21",
+          "resolved": "https://registry.npmjs.org/vite/-/vite-5.4.21.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@types/node": {
+              "version": "20.19.43"
+            }
+          }
+        }
+      }
+    }
+  }
+}

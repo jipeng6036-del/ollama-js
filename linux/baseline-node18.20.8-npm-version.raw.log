@@ -1,0 +1,10 @@
+npm verbose cli /home/node/validation/runtimes/node-v18.20.8-linux-x64/bin/node /home/node/validation/runtimes/node-v18.20.8-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@10.8.2
+npm info using node@v18.20.8
+10.8.2
+npm verbose cwd /home/node/validation/baseline-node18.20.8
+npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+npm verbose node v18.20.8
+npm verbose npm  v10.8.2
+npm verbose exit 0
+npm info ok

@@ -1,0 +1,1787 @@
+{
+  "cases": 60,
+  "networkAttempts": 0,
+  "source": {
+    "baseline": {
+      "stage": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\baseline-node18.20.8",
+      "utilsSha256": "ed708a24f5502e5fe15b0847c317580b46b93f8c151d8e60adbfe24766ed9c97"
+    },
+    "candidate": {
+      "stage": "C:\\Users\\lyz\\AppData\\Local\\Temp\\github-pr-1340-llm-sdk\\candidate-final2-node18.20.8",
+      "utilsSha256": "b39d98ea534017f679d671bb261a18388d200347897369fef8f14e8ef4007b6e"
+    }
+  },
+  "addedEnv": [],
+  "comparisons": [
+    {
+      "entry": "index",
+      "name": "tuple-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-mixed-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   ",
+        "X-Values": "second"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   ",
+        "x-values": "first, second"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "second"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "first, second"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-mixed-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "X-Values": "second",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "x-values": "first, second",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "second"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "first, second"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "index",
+      "name": "tuple-auth-dup-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ","
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-auth-dup-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "second-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token, second-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-auth-dup-mixedcase",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   ",
+        "AUTHORIZATION": "user-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", user-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-auth-dup-lowerfirst",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token",
+        "AUTHORIZATION": "second-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token, second-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-auth-dup-emptyfirst",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "user-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", user-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-auth-dup-lastwhitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token, "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token,"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-auth-dup-empty",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ","
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "tuple-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "index",
+      "name": "record-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "index",
+      "name": "record-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": true,
+      "candidateCallerMutated": true,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "index",
+      "name": "headers-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "index",
+      "name": "headers-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-mixed-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   ",
+        "X-Values": "second"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   ",
+        "x-values": "first, second"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "second"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "first, second"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-mixed-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "X-Values": "second",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "x-values": "first, second",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "second"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ],
+        [
+          "x-values",
+          "first, second"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-auth-dup-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ","
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-auth-dup-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "second-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token, second-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-auth-dup-mixedcase",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   ",
+        "AUTHORIZATION": "user-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", user-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-auth-dup-lowerfirst",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token",
+        "AUTHORIZATION": "second-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token, second-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, second-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-auth-dup-emptyfirst",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "user-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", user-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-auth-dup-lastwhitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token, "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token,"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-auth-dup-empty",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": ", "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ","
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": true,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "tuple-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "browser",
+      "name": "record-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "Authorization": "   "
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ""
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    },
+    {
+      "entry": "browser",
+      "name": "record-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "AUTHORIZATION": "user-token",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token, Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": true,
+      "candidateCallerMutated": true,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "browser",
+      "name": "headers-title-whitespace",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "",
+        "Authorization": "Bearer synthetic-env-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          ", Bearer synthetic-env-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": true,
+      "candidateEnvInjected": true
+    },
+    {
+      "entry": "browser",
+      "name": "headers-upper-token",
+      "baselineHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token"
+      },
+      "candidateHeaders": {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)",
+        "authorization": "user-token"
+      },
+      "baselineNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "candidateNativeHeaders": [
+        [
+          "accept",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "user-token"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "user-agent",
+          "ollama-js/0.0.0 (x64 win32 Node.js/v24.14.0)"
+        ]
+      ],
+      "headersChanged": false,
+      "baselineCallerMutated": false,
+      "candidateCallerMutated": false,
+      "baselineEnvInjected": false,
+      "candidateEnvInjected": false
+    }
+  ]
+}

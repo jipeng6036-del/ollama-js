@@ -1,0 +1,16 @@
+npm verbose cli /home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node /home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@10.8.2
+npm info using node@v20.20.2
+npm verbose title npm install /home/node/validation/candidate-package.tgz
+npm verbose argv "install" "/home/node/validation/candidate-package.tgz"
+npm verbose logfile logs-max:10 dir:/home/node/validation/npm-cache/_logs/2026-10-27T15_07_51_541Z-
+npm verbose logfile /home/node/validation/npm-cache/_logs/2026-10-27T15_07_51_541Z-debug-0.log
+npm http fetch GET 200 https://registry.npmjs.org/whatwg-fetch 5ms (cache hit)
+
+added 2 packages in 209ms
+npm verbose cwd /home/node/validation/candidate-final2-consumer
+npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+npm verbose node v20.20.2
+npm verbose npm  v10.8.2
+npm verbose exit 0
+npm info ok

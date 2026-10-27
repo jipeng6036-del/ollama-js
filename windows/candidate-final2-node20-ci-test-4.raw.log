@@ -1,0 +1,21 @@
+{
+  "version": "0.0.0",
+  "name": "ollama",
+  "dependencies": {
+    "@vitest/coverage-v8": {
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/@vitest/coverage-v8/-/coverage-v8-2.1.9.tgz",
+      "overridden": false,
+      "dependencies": {
+        "vitest": {
+          "version": "2.1.9"
+        }
+      }
+    },
+    "vitest": {
+      "version": "2.1.9",
+      "resolved": "https://registry.npmjs.org/vitest/-/vitest-2.1.9.tgz",
+      "overridden": false
+    }
+  }
+}

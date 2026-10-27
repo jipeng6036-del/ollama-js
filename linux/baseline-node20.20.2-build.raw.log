@@ -1,0 +1,35 @@
+npm verbose cli /home/node/validation/runtimes/node-v20.20.2-linux-x64/bin/node /home/node/validation/runtimes/node-v20.20.2-linux-x64/lib/node_modules/npm/bin/npm-cli.js
+npm info using npm@10.8.2
+npm info using node@v20.20.2
+npm verbose title npm run build
+npm verbose argv "run" "build"
+npm verbose logfile logs-max:10 dir:/home/node/validation/npm-cache/_logs/2026-10-27T14_52_19_785Z-
+npm verbose logfile /home/node/validation/npm-cache/_logs/2026-10-27T14_52_19_785Z-debug-0.log
+
+> ollama@0.0.0 build
+> unbuild
+
+ℹ Automatically detected entries: src/index, src/browser [esm] [cjs] [dts]
+ℹ Building ollama
+ℹ Cleaning dist directory: ./dist
+Entry module "src/index.ts" is using named and default exports together. Consumers of your bundle will have to use `chunk.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
+Entry module "src/browser.ts" is using named and default exports together. Consumers of your bundle will have to use `chunk.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
+✔ Build succeeded for ollama
+  dist/index.cjs (total size: 19.5 kB, chunk size: 1.52 kB, exports: Ollama, default)
+  └─ dist/browser.cjs (18 kB)
+
+  dist/browser.cjs (total size: 18 kB, chunk size: 18 kB, exports: Ollama, default)
+
+  dist/index.mjs (total size: 19.1 kB, chunk size: 1.23 kB, exports: Ollama, default)
+  └─ dist/browser.mjs (17.9 kB)
+
+  dist/browser.mjs (total size: 17.9 kB, chunk size: 17.9 kB, exports: Ollama, default)
+
+Σ Total dist size (byte size): 88.1 kB
+
+npm verbose cwd /home/node/validation/baseline-node20.20.2
+npm verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+npm verbose node v20.20.2
+npm verbose npm  v10.8.2
+npm verbose exit 0
+npm info ok
