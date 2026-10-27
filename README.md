@@ -6,7 +6,7 @@ Repeated `HeadersInit` tuple entries lost earlier values; mixed-case duplicates 
 
 - Linux Node 16.20.2/18.20.8/20.20.2: normal configured npm ci/build; Node 20 coverage dependency install, lint, and coverage all exit 0. Baseline 47 tests; candidate 63.
 - Windows matching runtime build matrix and functional coverage checks pass; Windows install commands include --no-audit/--no-fund and are additional coverage, not literal Linux CI argv.
-- Sixteen new regressions: baseline 14 fail/2 pass -> candidate 16 pass.
+- Windows negative control for the sixteen new regressions: baseline 14 fail/2 pass -> candidate 16 pass.
 - The same actual local npm-pack tarball is independently installed in Windows and Linux. All 19 shipped files match; all four ESM/CJS Node/browser public exports make real local HTTP list/stream-generate calls: baseline 8 pass/40 fail -> candidate 48 pass on each OS.
 - Independent actual public HTTP cases: baseline 42/66 -> candidate 66/66. Sixty synthetic Config.fetch auth-control calls cover 30 comparisons, with no new environment-token injection in the tested cases. No real cloud/model requests.
 

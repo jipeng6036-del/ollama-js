@@ -18,7 +18,7 @@ The package archives are normal npm pack outputs from untouched canonical packag
 
 ## Compiler checks
 
-The optional default tsc --noEmit has the same 19 pre-existing Node-type/ES-library configuration diagnostics. Both sources pass matched supplemental checks with @types/node@20 and --lib es2020,dom. No source compiler configuration is changed. Required builds and declaration generation pass.
+On the additional Windows check, the optional default tsc --noEmit has the same 19 pre-existing Node-type/ES-library configuration diagnostics. Both sources pass matched supplemental checks with @types/node@20 and --lib es2020,dom. No source compiler configuration is changed. Required builds and declaration generation pass.
 
 ## Recovery and retained boundaries
 
@@ -31,3 +31,5 @@ Earlier two-line normalization and a too-broad temporary Map annotation are supe
 ## Driver provenance
 
 The drivers retain their original absolute evidence/workspace paths; adapt those paths for another machine. scripts/linux-gates.py is the nonexecuted template parsed by the final driver to construct its runner; its older command defaults are superseded by the final driver. Only linux/receipt.json and the final raw payload bind the accepted Linux run.
+
+The baseline14-fail/2-pass negative regression run was performed on Windows only. Linux baseline coverage ran its original47 tests; final Linux candidate ran63 tests, including all16 new regressions. No Linux negative-run count is claimed.
